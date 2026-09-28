@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café San Martín - Café de Especialidad</title>
+   
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+   
+    <header>
+        <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
+            <img src="imagen/cafe-de-origin-costa-rica-276x300.png" alt="Logo Café San Martín" style="height: 40px; width: auto; object-fit: contain;">
+            <h2 style="margin: 0; font-size: 20px;">Café San Martín</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="usuarios.php" class="btn-login">Panel Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+       
+        <section id="inicio" class="hero">
+            <h1>La historia detrás de una taza de café San Martín</h1>
+            <p>Café de especialidad cultivado en las alturas de Tarrazú, Costa Rica.</p>
+        </section>
+
+      
+        <section id="catalogo" class="container-seccion">
+            <h2>Nuestros Tipos de Café</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="imagen/images.jpeg" alt="Café Catuaí" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px;">
+                    <h3>Catuaí</h3>
+                    <p><strong>Origen:</strong> Tarrazú</p>
+                    <p><strong>Tueste:</strong> Medio</p>
+                    <p><strong>Notas:</strong> Chocolate y Cítricas</p>
+                </div>
+                <div class="card">
+                    <img src="imagen/images (1).jpeg" alt="Café Borgū" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px;">
+                    <h3>Borgū</h3>
+                    <p><strong>Origen:</strong> Tarrazú</p>
+                    <p><strong>Tueste:</strong> Oscuro</p>
+                    <p><strong>Notas:</strong> Avellanadas</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="servicios" class="container-seccion">
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos venta de café en grano o molido, catas personalizadas y envíos a todo el país.</p>
+        </section>
+
+       
+        <section id="nosotros" class="container-seccion">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un emprendimiento familiar enfocado en producir café de alta calidad, promoviendo la tradición cafetalera de Costa Rica.</p>
+        </section>
+
+   
+        <section id="contacto" class="container-seccion">
+            <h2>Ponte en contacto con nosotros</h2>
+            <form action="#" method="POST" onsubmit="alert('¡Mensaje enviado con éxito!'); return false;">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Correo:</label>
+                    <input type="email" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label>Mensaje:</label>
+                    <textarea name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+      
+        <section id="faq" class="container-seccion">
+            <h2>Preguntas Frecuentes</h2>
+            <details style="margin-bottom: 10px;">
+                <summary><strong>¿De dónde proviene nuestro café?</strong></summary>
+                <p>Nuestro café es cosechado directamente en las montañas de Tarrazú.</p>
+            </details>
+            <details>
+                <summary><strong>¿Cuáles son las formas de envío?</strong></summary>
+                <p>Realizamos envíos por medio de Correos de Costa Rica a todo el territorio nacional.</p>
+            </details>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 - Café San Martín. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
